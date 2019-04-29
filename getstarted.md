@@ -29,7 +29,7 @@ In this project, NLP method is used to do the prediction based on 2 sessions of 
 ### 4. Relabeling Model
 
 
-{% include stance_detection.html %}
+{% include stance_distribution.html %}
 
 
 
