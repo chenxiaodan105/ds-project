@@ -51,10 +51,7 @@ In this project, NLP method is used to do the prediction based on 2 sessions of 
 | relabeling model + Glove + CNN + LSTM | 0.86| 0.95 |
 
 
-<div>
-    <a href="https://plot.ly/~XiaodanChen/8/?share_key=wbV7ItAoxwzXnc1LrLO2vw" target="_blank" title="comparison of methods" style="display: block; text-align: center;"><img src="https://plot.ly/~XiaodanChen/8.png?share_key=wbV7ItAoxwzXnc1LrLO2vw" alt="comparison of methods" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
-    <script data-plotly="XiaodanChen:8" sharekey-plotly="wbV7ItAoxwzXnc1LrLO2vw" src="https://plot.ly/embed.js" async></script>
-</div>
+
 
 
 <img src="../img/comparison.png" style="width:100%;" alt="method comparison" />
