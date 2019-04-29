@@ -32,7 +32,6 @@ navbar-links:
   Resources:
     - Getting started: "getstarted"
     - Other sites that use this template: "featured-users"
-    - External link to Beautiful Jekyll Template page: "https://github.com/daattali/beautiful-jekyll#readme"
   Example pages:
     - Example of a Markdown page: "md-example"
     - Example of an HTML page: "html-example"
