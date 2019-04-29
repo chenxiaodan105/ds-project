@@ -31,7 +31,7 @@ navbar-links:
   Home: ""
   Text Preprocessing: "getstarted"
 
-  Models: "html-example"
+  Models: 
     - ML models: "html-example"
     - DL models: "md-example"
   Reusults: "featured-users"
