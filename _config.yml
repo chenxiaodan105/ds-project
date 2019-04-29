@@ -15,7 +15,7 @@ baseurl: "/ds-project"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My Data Science Project
+title: Congressional Bills Stance Detection
 
 # Short description of your site
 description: Here's the description of my porject
@@ -43,8 +43,8 @@ navbar-links:
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Your name goes here
-  email: "youremail@gmail.com"
+  name: "Xiaodan Chen"
+  email: "chenxiaodan105@gmail.com"
   facebook: yourfacebook
   github: yourgithub
   twitter: yourtwitter
