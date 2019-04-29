@@ -13,13 +13,6 @@ In this project, NLP method is used to do the prediction based on 2 sessions of 
 
 ## Overview 
 
-### 1. Introduction
-Stance detection is the extraction of a people's reaction to a claim made by a primary actor. It is a core part of a set of approaches to capture political trends. Companies are sensitive to political policies. It could bring them a lot of benefits, such as the fund, the support from the government, if they could catch up with political trends beforehand. 
-
-In this project, NLP method is used to do the prediction based on 2 sessions of congressional bills and transcripts.Just explore it and have fun !
-
-
-
 ### 2. Text Preprocessing
 * tokenization
 * remove punctuation
@@ -36,25 +29,10 @@ In this project, NLP method is used to do the prediction based on 2 sessions of 
 ### 4. Relabeling Model
 
 
-### 3. Methods and Results
-* stance detection
-
-| method |  F1 score(have stance) | F1 score(no stance) |
-| ----------- | ----------- | ----------- | 
-| tfidf + lr | 0.21 | 0.85 |
-| tfidf + random forest |0.16 | 0.96 |
-| tfidf + BalancedRandomForest |0.22 | 0.83|
-| tfidf + WeightedBalancedRandomForest| 0.19|0.78|
-| relabeling model + tfidf + lr  | 0.80| 0.83 |
-| relabeling model + tfidf + random forest |0.88|0.91|
-| relabeling model + Glove + LSTM |0.86 | 0.96 |
-| relabeling model + Glove + CNN + LSTM | 0.86| 0.95 |
+{% include stance_detection.html %}
 
 
-{% include compare.html %}
 
-
-<img src="../img/comparison.png" style="width:100%;" alt="method comparison" />
 
 
 
