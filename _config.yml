@@ -29,13 +29,13 @@ description: Here's the description of my porject
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  Text Preprocessing:
-    - Getting started: "getstarted"
-    - Other sites that use this template: "featured-users"
-  Models:
-    - Example of an HTML page: "html-example"
-  Reusults: 
-    - Example of a Markdown page: "md-example"
+  Text Preprocessing: "getstarted"
+
+  Models: "html-example"
+    - ML models: "html-example"
+    - DL models: "md-example"
+  Reusults: "featured-users"
+   # - Example of a Markdown page: "md-example"
   About me: "https://www.linkedin.com/in/xiaodanchen/"
 
 # --- Footer options --- #
