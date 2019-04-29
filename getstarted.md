@@ -53,6 +53,6 @@ In this project, NLP method is used to do the prediction based on 2 sessions of 
 {% include comparison.html %}
 
 
----
+
 
 
