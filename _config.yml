@@ -29,7 +29,9 @@ description: Here's the description of my porject
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  Text Preprocessing: "getstarted"
+  Text Preprocessing: 
+    - "getstarted"
+    - "imbalance"
 
   Models: 
     - ML models: "html-example"
