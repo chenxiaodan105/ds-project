@@ -55,4 +55,4 @@ In this project, NLP method is used to do the prediction based on 2 sessions of 
 
 ---
 
-See how easy that is? I wasn't lying - it really can be done in two minutes.
+
