@@ -21,15 +21,7 @@ In this project, NLP method is used to do the prediction based on 2 sessions of 
 * remove all words that have a length <= 1 characters (this number can be changed)
 * limit tokens frequency
 
-### 3. Imbalance Data Handling
-* balanced ensemble method
-* [reference](https://imbalanced-learn.org/en/stable/ensemble.html)
-* [original paper](https://statistics.berkeley.edu/sites/default/files/tech-reports/666.pdf)
 
-### 4. Relabeling Model
-
-
-{% include stance_distribution.html %}
 
 
 
