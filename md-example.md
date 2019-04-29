@@ -1,30 +1,18 @@
 ---
 layout: page
-title: Markdown-based page example
-subtitle: Subtitle goes here
-bigimg: /img/start.jpg
+title: Deep Learning
+subtitle: neural network structure and performance
+bigimg: /img/politics2.png
 ---
 
-## Here is where we can insert an image:
+## 1. Neural Network Structure:
 
-![GW Data Science logo](/img/gwdsp.png)
+* 1. GloVe + LSTM
 
-## How about a link?
+![GloVe + LSTM](/img/glove_lstm.png)
 
-And of course some text, and maybe [a link to https://datasci.columbian.gwu.edu/](https://datasci.columbian.gwu.edu/)
+* 2. GloVe + CNN + LSTM
 
-## Or some code?
+![GloVe + CNN + LSTM](/img/cnn_lstm.png)
 
-Some code might go here:
 
-```
-x <- 5 # Here's some R code
-```
-
-What if I just paste the HTML for a plotly plot?
-
-We can do it with a line of markdown that looks like this (without the slashes - I haven't solved that problem just yet...):
-```
-\{\% include jupyter-basic_bar.html \%\}
-```
-{% include jupyter-basic_bar.html %}
