@@ -7,12 +7,21 @@ bigimg: /img/politics2.png
 
 ## 1. Neural Network Structure:
 
-* 1. GloVe + LSTM
+**GloVe + LSTM**
+* structure
 
 ![GloVe + LSTM](/img/glove_lstm.png)
 
-* 2. GloVe + CNN + LSTM
+* performance
+
+![performance1](/img/glove_lstm_acc_loss.png)
+
+**GloVe + CNN + LSTM**
 
 ![GloVe + CNN + LSTM](/img/cnn_lstm.png)
+
+* performance
+
+![performance2](/img/glove_cnn_lstm_acc_loss.png)
 
 
