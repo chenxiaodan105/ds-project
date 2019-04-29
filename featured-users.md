@@ -4,7 +4,6 @@ title: Results
 ---
 
 ### Methods and Results
-* stance detection
 
 {% include compare.html %}
 
@@ -20,7 +19,7 @@ title: Results
 | relabeling model + Glove + LSTM |0.86 | 0.96 |
 | relabeling model + Glove + CNN + LSTM | 0.86| 0.95 |
 
-<img src="../img/comparison.png" style="width:100%;" alt="method comparison" />
+
 
 
 
