@@ -50,7 +50,7 @@ In this project, NLP method is used to do the prediction based on 2 sessions of 
 | relabeling model + Glove + LSTM |0.86 | 0.96 |
 | relabeling model + Glove + CNN + LSTM | 0.86| 0.95 |
 
-{% include comparison.html %}
+
 
 <img src="../img/comparison.png" style="width:100%;" alt="method comparison" />
 
