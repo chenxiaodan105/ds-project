@@ -30,8 +30,8 @@ description: Here's the description of my porject
 navbar-links:
   Home: ""
   Text Preprocessing: 
-    - "getstarted"
-    - "imbalance"
+    - Data Preprocessing: "getstarted"
+    - Imbalance Data: "imbalance"
 
   Models: 
     - ML models: "html-example"
