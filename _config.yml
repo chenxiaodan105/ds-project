@@ -29,10 +29,10 @@ description: Here's the description of my porject
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  Resources:
+  Text Preprocessing:
     - Getting started: "getstarted"
     - Other sites that use this template: "featured-users"
-  Example pages:
+  Models and Summaries:
     - Example of a Markdown page: "md-example"
     - Example of an HTML page: "html-example"
   About me: "https://www.linkedin.com/in/xiaodanchen/"
