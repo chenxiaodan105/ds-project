@@ -68,11 +68,11 @@ check the graph below to have a look at part of the word embedding in this proje
  
   <img src="../img/LR_feature_importance.png" style="width:100%;" alt="stance detection" />
   
- * for words that contribute to the class 'have stance'
+ * for words that contribute to the class 'no stance'
  
   <img src="../img/good.png" style="width:40%;" alt="stance detection" />
   
- * for words that contribute to the class 'no stance'
+ * for words that contribute to the class 'have stance'
  
   <img src="../img/bad.png" style="width:40%;" alt="stance detection" />
   
