@@ -148,11 +148,11 @@ check the graph below to have a look at part of the word embedding in this proje
   
  * for words that contribute to the class 'have stance'
  
-  <img src="../img/good.png" style="width:100%;" alt="stance detection" />
+  <img src="../img/good.png" style="width:50%;" alt="stance detection" />
   
  * for words that contribute to the class 'no stance'
  
-  <img src="../img/bad.png" style="width:100%;" alt="stance detection" />
+  <img src="../img/bad.png" style="width:50%;" alt="stance detection" />
   
   
   **key words extraction from random forest**
