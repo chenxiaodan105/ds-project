@@ -1,9 +1,11 @@
-### Imbalance Data Handling with Resampling
+### Method 1: Imbalance Data Handling with Resampling
 * balanced ensemble method
 * [reference](https://imbalanced-learn.org/en/stable/ensemble.html)
 * [original paper](https://statistics.berkeley.edu/sites/default/files/tech-reports/666.pdf)
 
-### Relabeling Model
+### Method 2: Imbalance Data Handling with ML Parameter Tuning
+
+### Method 3: Imbalance Data Handling with Relabeling Model
 
 
 {% include stance.html %}
