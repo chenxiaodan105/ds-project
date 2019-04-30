@@ -34,7 +34,7 @@ navbar-links:
     - Imbalance Data: "imbalance"
 
   Models: 
-    - ML models: "html-example"
+    - ML models: "ml.md"
     - DL models: "md-example"
   Reusults: "featured-users"
    # - Example of a Markdown page: "md-example"
