@@ -43,7 +43,7 @@ Data Preprocessing could be the key in a NLP task. Without good data, we are jus
 
 * remove all words that have a length <= 1 characters (this number can be changed)
 
-* limit tokens frequency
+* limit word frequency
 
 
 ### 3. Text Vectorizer
