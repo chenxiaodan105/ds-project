@@ -1,7 +1,7 @@
 
 ---
 layout: page
-title: Getting started
+title: Text Preprocessing
 subtitle: Methods
 bigimg: /img/congress.jpg
 ---
