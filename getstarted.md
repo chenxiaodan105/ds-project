@@ -29,7 +29,7 @@ Data Preprocessing could be the key in a NLP task. Without good data, we are jus
 
 * original stance distribution:
 
-<img src="../img/data distribution before relabelling.jpeg" style="width:100%;" alt="stance detection" />
+{% include 1.html %}
 
 ### 2. Text Preprocessing Methods
 * tokenization
@@ -84,20 +84,6 @@ def remove_tokens_with_length(text,length):
 * limit tokens frequency
 
 ```
-def get_common_tokens(data,min_occurence,max_occurence):
-    '''
-    get the vocab of the whole corpus
-    '''
-    vocab = Counter()
-    corpus = data['text']
-    for speech in corpus:
-        tokens = speech.split()
-        vocab.update(tokens)
-    # keep tokens with a min occurence
-    min_occurence = min_occurence
-    common_tokens = [k for k,c in vocab.items() if c > min_occurence or c < max_occurence]
-    return common_tokens
-
 def clean_corpus(data, text,min_occurence,max_occurence):
     '''
     ensure all speeches in a corpus only keep tokens with a min occurence
