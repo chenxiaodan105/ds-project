@@ -8,3 +8,7 @@
 
 
 {% include stance.html %}
+
+{% include 1.html %}
+
+{% include 2.html %}
