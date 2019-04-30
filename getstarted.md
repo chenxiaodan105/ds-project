@@ -18,11 +18,11 @@ Data Preprocessing could be the key in a NLP task. Without good data, we are jus
 
 * original speech length distribution:
 
-<img src="../img/all_speeches_length_distribution.jpeg" style="width:100%;" alt="stance detection" />
+<img src="../img/all_speeches_length_distribution.jpeg" style="width:50%;" alt="stance detection" />
 
 * zoom in and check speech length(5<length<1000) distribution:
 
-<img src="../img/speeches_with_normal_length_distribution (5<length<1000).jpeg" style="width:100%;" alt="stance detection" />
+<img src="../img/speeches_with_normal_length_distribution (5<length<1000).jpeg" style="width:50%;" alt="stance detection" />
 
 
 **check stance distribution**
