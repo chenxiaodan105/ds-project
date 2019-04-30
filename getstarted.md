@@ -34,73 +34,29 @@ Data Preprocessing could be the key in a NLP task. Without good data, we are jus
 
 ### 2. Text Preprocessing Methods
 * tokenization
-```
-def tokenize_text(text):
-    tokens = word_tokenize(text)
-    tokens = [token.strip() for token in tokens]
-    return tokens
-```
 
 * remove special words
-```
-def remove_special_characters(text):
-    tokens = tokenize_text(text)
-    pattern = re.compile('[{}]'.format(re.escape(string.punctuation)))
-    filtered_tokens = filter(None, [pattern.sub('', token) for token in tokens])
-    filtered_text = ' '.join(filtered_tokens)
-    return filtered_text
-```
-
 
 * remove words that are not purely alphabetic words
-```
-def remove_non_alphabetic_characters(text):
-    '''
-    remove non-alphabetic characters and numbers
-    '''
-    tokens = tokenize_text(text)
-    tokens = [w for w in tokens if w.isalpha()]
-    return ' '.join(tokens)
-```
-
 
 * remove stopwords
-```
-def remove_stopwords(text):
-    stop = list(set(stopwords.words('english')))
-    tokens = tokenize_text(text)
-    filtered_tokens = [token for token in tokens if token not in stop]
-    filtered_text = ' '.join(filtered_tokens)
-    return filtered_text
-```
-
 
 * remove all words that have a length <= 1 characters (this number can be changed)
-```
-def remove_tokens_with_length(text,length):
-    '''
-    remove tokens with length less than or equal the input length
-    '''
-    tokens = tokenize_text(text)
-    tokens = [w for w in tokens if len(w)>length]
-    return ' '.join(tokens)
-```
-
 
 * limit tokens frequency
 
 ```
-def clean_corpus(data, text,min_occurence,max_occurence):
-    '''
-    ensure all speeches in a corpus only keep tokens with a min occurence
-    input: corpus, common tokens with a min occurence in the whole corpus
-    output: new target corpus
-    '''
-    common_tokens = get_common_tokens(data, min_occurence,max_occurence)
-    tokens = text.split()
-    tokens = [w for w in tokens if w in common_tokens]
-    new_speech = ' '.join(tokens)
-    return new_speech
+    def clean_corpus(data, text,min_occurence,max_occurence):
+        '''
+        ensure all speeches in a corpus only keep tokens with a min occurence
+        input: corpus, common tokens with a min occurence in the whole corpus
+        output: new target corpus
+        '''
+        common_tokens = get_common_tokens(data, min_occurence,max_occurence)
+        tokens = text.split()
+        tokens = [w for w in tokens if w in common_tokens]
+        new_speech = ' '.join(tokens)
+        return new_speech
 ```
 
 ### 3. Text Vectorizer
