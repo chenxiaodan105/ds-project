@@ -45,46 +45,12 @@ Data Preprocessing could be the key in a NLP task. Without good data, we are jus
 
 * limit tokens frequency
 
-```
-    def clean_corpus(data, text,min_occurence,max_occurence):
-        '''
-        ensure all speeches in a corpus only keep tokens with a min occurence
-        input: corpus, common tokens with a min occurence in the whole corpus
-        output: new target corpus
-        '''
-        common_tokens = get_common_tokens(data, min_occurence,max_occurence)
-        tokens = text.split()
-        tokens = [w for w in tokens if w in common_tokens]
-        new_speech = ' '.join(tokens)
-        return new_speech
-```
 
 ### 3. Text Vectorizer
 
 * Tf-Idf 
-```
-def tfidf_model(corpus, ngram_range=(1, 1),min_df=0.1,max_df=0.9,max_features=5000):
-    vectorizer = TfidfVectorizer(min_df=min_df,
-                                 max_df=max_df,
-                                 stop_words='english',
-                                 ngram_range=ngram_range,
-                                 max_features = max_features)
-    features = vectorizer.fit_transform(corpus)
-    return vectorizer, features
-```
-
 
 * Bag of Words
-```
-def bow_model(corpus, ngram_range=(1, 1),min_df=0.1,max_df=0.9,max_features=5000):
-    vectorizer = CountVectorizer(min_df=min_df,
-                                 max_df=max_df,
-                                 stop_words='english',
-                                 ngram_range=ngram_range,
-                                 max_features = max_features)
-    features = vectorizer.fit_transform(corpus)
-    return vectorizer, features
- ```
  
  
 ### 4. Word Embedding
@@ -104,11 +70,11 @@ check the graph below to have a look at part of the word embedding in this proje
   
  * for words that contribute to the class 'have stance'
  
-  <img src="../img/good.png" style="width:50%;" alt="stance detection" />
+  <img src="../img/good.png" style="width:40%;" alt="stance detection" />
   
  * for words that contribute to the class 'no stance'
  
-  <img src="../img/bad.png" style="width:50%;" alt="stance detection" />
+  <img src="../img/bad.png" style="width:40%;" alt="stance detection" />
   
   
   **key words extraction from random forest**
