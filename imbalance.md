@@ -63,7 +63,7 @@ Here is the result for this project using this method:
  
  {% include resampling.html %}
  
- The results have very few improvemnet compared with method 1, but F1 scores for the minority class are basically still very bad. Seems like this method doesn't work here. Since this project is essencially NLP project,when calculating TF-Idf, We have more than 200,000 tokens in our corpus, I think if we resample a very small part of them every time for a tree and finally just aggregate the result, the bias would be very large. That might be the reason it doen't work here. 
+ The results have very few improvemnet compared with method 1, but F1 scores for the minority class are basically still very bad. Seems like this method doesn't work here. Since this project is essencially NLP project,when calculating TF-Idf, We have more than 20,000 tokens in our corpus, I think if we resample a very small part of them every time for a tree and finally just aggregate the result, the bias would be very large. That might be the reason it doen't work here. 
 
 You can check these two links for further information:
 
