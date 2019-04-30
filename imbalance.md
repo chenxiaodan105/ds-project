@@ -1,4 +1,3 @@
-## deal with imbalance data
 ### Imbalance Data Handling with Resampling
 * balanced ensemble method
 * [reference](https://imbalanced-learn.org/en/stable/ensemble.html)
