@@ -8,7 +8,7 @@ bigimg: /img/congress.jpg
 
 ## Overview 
 
-Data Preprocessing could be the key in a NLP task. Without good data, we are just feed machine learning models garbage and get garbage out. 
+Data Preprocessing could be the key in a NLP task. Without good data, we are just feed machine learning models garbage and get garbage out. In later chapter, I would introduce the explainary data analysis, text preprocessing method, text vectorizer and key words extractions. Let's go !
 
 <img src="../img/against.gif" style="width:100%;" alt="stance detection" />
 
@@ -82,6 +82,7 @@ def remove_tokens_with_length(text,length):
 ```
 
 * limit tokens frequency
+
 ```
 def get_common_tokens(data,min_occurence,max_occurence):
     '''
@@ -135,6 +136,40 @@ def bow_model(corpus, ngram_range=(1, 1),min_df=0.1,max_df=0.9,max_features=5000
     features = vectorizer.fit_transform(corpus)
     return vectorizer, features
  ```
+ 
+ ### 4. Word Embedding
+ 
+A word embedding is a learned representation for text where words that have the same meaning have a similar representation. It is this approach to representing words and documents that may be considered one of the key breakthroughs of deep learning on challenging natural language processing problems.
+
+check the graph below to have a look at part of the word embedding in this project:
+ 
+ <img src="../img/word_embedding.png" style="width:100%;" alt="stance detection" />
+ 
+ 
+ 
+ ### 5. Key Words Extraction
+ 
+ **key words extraction from logistic regression**
+ 
+  <img src="../img/LR_feature_importance.png" style="width:100%;" alt="stance detection" />
+  
+ * for words that contribute to the class 'have stance'
+ 
+  <img src="../img/good.png" style="width:100%;" alt="stance detection" />
+  
+ * for words that contribute to the class 'no stance'
+ 
+  <img src="../img/bad.png" style="width:100%;" alt="stance detection" />
+  
+  
+  **key words extraction from random forest**
+  
+  <img src="../img/RF_feature_importance.png" style="width:100%;" alt="stance detection" />
+  
+  
+ 
+ 
+ 
  
 
 
