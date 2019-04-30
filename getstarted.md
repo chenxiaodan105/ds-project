@@ -132,7 +132,6 @@ check the graph below to have a look at part of the word embedding in this proje
  <img src="../img/word_embedding.png" style="width:100%;" alt="stance detection" />
  
  
- 
  ### 5. Key Words Extraction
  
  **key words extraction from logistic regression**
