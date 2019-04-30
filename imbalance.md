@@ -6,6 +6,7 @@ subtitle: comparison of three Methods
 bigimg: /img/congress.jpg
 ---
 
+
 Imbalanced data typically refers to a problem with classification problems where the classes are not represented equally.
 
 Has this happened to you?
