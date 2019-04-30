@@ -25,6 +25,12 @@ The author try to use ensemble methods to alleviate the harmness caused by imbal
 
 >'In this paper we propose two ways to deal with the imbalanced data classification problem using random forest. One is based on cost sensitive learning, and the other is based on a sampling technique. Both methods are shown to improve the prediction accuracy of the minority class, and have favorable performance compared to the existing algorithms.'
 
+Here is the result for this project using this method:
+ 
+ {% include resampling.html %}
+ 
+ The results are basically still very bad. Seems like this method doesn't work here. Since this project is essencially NLP project,when calculating TF-Idf, We have more than 200,000 tokens in our corpus, I think if we resample a very small part of them every time for a tree and finally just aggregate the result, the bias would be very large. That might be the reason it doen't work here. 
+
 You can check these two links for further information:
 
 * [reference](https://imbalanced-learn.org/en/stable/ensemble.html)
