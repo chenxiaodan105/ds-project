@@ -29,7 +29,7 @@ Data Preprocessing could be the key in a NLP task. Without good data, we are jus
 
 * original stance distribution:
 
-{% include 1.html %}
+{% include 11.html %}
 
 ### 2. Text Preprocessing Methods
 * tokenization
