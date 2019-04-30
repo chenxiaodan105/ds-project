@@ -25,15 +25,15 @@ The author try to use ensemble methods to alleviate the harmness caused by imbal
 
 >'In this paper we propose two ways to deal with the imbalanced data classification problem using random forest. One is based on cost sensitive learning, and the other is based on a sampling technique. Both methods are shown to improve the prediction accuracy of the minority class, and have favorable performance compared to the existing algorithms.'
 
-* The idea for the balanced random forest ensemble method is:
+**The idea for the balanced random forest ensemble method is:**
 
->draw a bootstrap sample from the minority class and draw a bootstrap sample from the majority class with the same size of the minority sample
+- draw a bootstrap sample from the minority class and draw a bootstrap sample from the majority class with the same size of the minority sample
 
->induce a classification tree to maximize size without pruning. the tree is induced with CART algorithm with the modification of only searching through a set of m randomly selected variables instead of searching through all variables to find the optimal split
+- induce a classification tree to maximize size without pruning. the tree is induced with CART algorithm with the modification of only searching through a set of m randomly selected variables instead of searching through all variables to find the optimal split
 
->repeat 2 steps above, aggregate the predictions of the emsemble above and get the final prediction
+- repeat 2 steps above, aggregate the predictions of the emsemble above and get the final prediction
 
-* The idea for the Weighted random forest ensemble method is:
+**The idea for the Weighted random forest ensemble method is:**
 
 - place a penalty on misclassifying the minority class. we assign a weight to each class, for the minority class we give a larger weight (i.e. higher classification cost)
 
@@ -76,6 +76,10 @@ Unfortunately, for this specific project, the F1 score is still pretty low for t
 Seems like resampling and class weight method doesn't work like a charm here. So it's a good idea to go back and check data manually. The finding is a surprise here! A lot of speeches in bills and transcripts with some strong indications of stances are mislabeled as '0', namely no stance. Uhhhhh....
 
 That's the reason here comes the regular expression relabeling model. By detecting some strong key words,such as 'support','oppose',etc, the relabeling model would relabel all originally unrelabeled data.
+
+Here is the result for this project using this method:
+ 
+ {% include relabeldata.html %}
 
 **Let's look at the change for stance distribution after relabeling from the perspective: quantity**
 
