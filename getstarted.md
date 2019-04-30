@@ -31,6 +31,7 @@ Data Preprocessing could be the key in a NLP task. Without good data, we are jus
 
 {% include 11.html %}
 
+
 ### 2. Text Preprocessing Methods
 * tokenization
 ```
@@ -50,6 +51,7 @@ def remove_special_characters(text):
     return filtered_text
 ```
 
+
 * remove words that are not purely alphabetic words
 ```
 def remove_non_alphabetic_characters(text):
@@ -61,6 +63,7 @@ def remove_non_alphabetic_characters(text):
     return ' '.join(tokens)
 ```
 
+
 * remove stopwords
 ```
 def remove_stopwords(text):
@@ -70,6 +73,8 @@ def remove_stopwords(text):
     filtered_text = ' '.join(filtered_tokens)
     return filtered_text
 ```
+
+
 * remove all words that have a length <= 1 characters (this number can be changed)
 ```
 def remove_tokens_with_length(text,length):
@@ -80,6 +85,7 @@ def remove_tokens_with_length(text,length):
     tokens = [w for w in tokens if len(w)>length]
     return ' '.join(tokens)
 ```
+
 
 * limit tokens frequency
 
@@ -111,6 +117,7 @@ def tfidf_model(corpus, ngram_range=(1, 1),min_df=0.1,max_df=0.9,max_features=50
     return vectorizer, features
 ```
 
+
 * Bag of Words
 ```
 def bow_model(corpus, ngram_range=(1, 1),min_df=0.1,max_df=0.9,max_features=5000):
@@ -123,7 +130,8 @@ def bow_model(corpus, ngram_range=(1, 1),min_df=0.1,max_df=0.9,max_features=5000
     return vectorizer, features
  ```
  
- ### 4. Word Embedding
+ 
+### 4. Word Embedding
  
 A word embedding is a learned representation for text where words that have the same meaning have a similar representation. It is this approach to representing words and documents that may be considered one of the key breakthroughs of deep learning on challenging natural language processing problems.
 
@@ -132,7 +140,7 @@ check the graph below to have a look at part of the word embedding in this proje
  <img src="../img/word_embedding.png" style="width:100%;" alt="stance detection" />
  
  
- ### 5. Key Words Extraction
+### 5. Key Words Extraction
  
  **key words extraction from logistic regression**
  
