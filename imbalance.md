@@ -25,6 +25,22 @@ The author try to use ensemble methods to alleviate the harmness caused by imbal
 
 >'In this paper we propose two ways to deal with the imbalanced data classification problem using random forest. One is based on cost sensitive learning, and the other is based on a sampling technique. Both methods are shown to improve the prediction accuracy of the minority class, and have favorable performance compared to the existing algorithms.'
 
+* The idea for the balanced random forest ensemble method is:
+
+*draw a bootstrap sample from the minority class and draw a bootstrap sample from the majority class with the same size of the minority sample
+
+*induce a classification tree to maximize size without pruning. the tree is induced with CART algorithm with the modification of only searching through a set of m randomly selected variables instead of searching through all variables to find the optimal split
+
+*repeat 2 steps above, aggregate the predictions of the emsemble above and get the final prediction
+
+* The idea for the Weighted random forest ensemble method is:
+
+*place a penalty on misclassifying the minority class. we assign a weight to each class, for the minority class we give a larger weight (i.e. higher classification cost)
+
+*The class weights are incorporated into the RF algorithm in two places. In the tree induction procedure, class weights are used to weight the Gini criterion for finding splits. In the terminal nodes of each tree, class weights are again taken into consideration. The class prediction of each terminal node is determined by “weighted majority vote”; i.e., the weighted vote of a class is the weight for that class times the number of cases for that class at the terminal node.
+
+*The final class prediction for RF is then determined by aggregatting the weighted vote from each individual tree, where the weights are average weights in the terminal nodes. Class weights are an essential tuning parameter to achieve desired performance. The out-of-bag estimate of the accuracy from RF can be used to select weights. This method, Weighted Random Forest (WRF), is incorporated in the present version of the software.
+
 Here is the result for this project using this method:
  
  {% include resampling.html %}
